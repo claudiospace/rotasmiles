@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en" >
+   <head>
+      <meta charset="UTF-8">
+      <title>Rota Smiles</title>
+      <link href="https://fonts.googleapis.com/css?family=Nunito+Sans" rel="stylesheet">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+      <link rel="stylesheet" href="./css/style.css">
+	  <script  src="./game_f1_files/js/rotasm.js"></script>
+   </head>
+   <body>
+      <!-- Painel de Pontos -->
+      <div class="topcorner" ><a id="topcorner" ><b>0 MILHAS</b></a></b></div>
+      <!-- partial:index.partial.html -->
+      <header>
+         <div class="container text-center js--fadeInTop">
+            <div class="row justify-content-md-center">
+               <div class="col-6">
+                  <img src="./img/logo_rotasm.png" class="img-fluid" alt="Logo Rota Smiles" style="padding-bottom: 20px;">
+				  <h2>Sonhe, Planeje, Smiles</h2>
+                  <br>
+                   <a class="bnt-more" data-toggle="modal" data-target="#YoutubeModal" href="javascript:void(0)">Vídeo</a>	
+				   			   <a type="button" href="#fase1" data-dismiss="modal">Começar!</a>
+               </div>
+            </div>
+         </div>
+      </header>
+      <section id="fase1" class="mapa js--fadeInLeft">
+         <div class="container text-center">
+            <img src="./img/mapa_sonhos.png" class="img_pq" alt="Logo Rota Smiles">
+            <p>Selecione no mapa o lugar que você sonha conhecer para começar sua Rota Smiles:</p>
+         </div>
+         <a href="#fase2"><img onclick="add1()" src="./img/mapa1.png" onmouseover="this.src='./img/mapa2.png'" onmouseout="this.src='./img/mapa1.png'" class="img-fluid" alt="Mapa Smiles"></a>
+      </section>
+      <section id="fase2">
+         <div class="container text-center">
+            <img src="./img/logo_rotasm_orlando.png" class="img_pq" alt="Logo Rota Smiles">
+            <br><h3>Agora que você já definiu seu sonho, é hora de planejar.</h3><p>Siga as fases e ganhe milhas para realizar seu sonho!</p>
+         </div>
+      </section>
+      <section class="timeline">
+         <div class="container">
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div  class="timeline-content timeline-card js--fadeInLeft">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header1.png">
+                     <h2>Planejar para Realizar</h2>
+                  </div>
+                  <div class="card-phase">FASE 1</div>
+                  <p>Tirar um sonho da cabeça e passá-lo para o papel é a primeira fase da nossa Rota Smiles. Vamos começar a planejar! O que o cartão de crédito GOL Smiles pode ajudar nesse caminho?</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal" href="javascript:void(0)">Jogar</a>		
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInRight">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header2.png">
+                     <h2>O Visto Americano</h2>
+                  </div>
+                  <div class="card-phase">FASE 2</div>
+                  <p>OK, primeira fase completa. Vamos continuar planejando. Porém, para realizar o sonho de ir a Orlando, vamos precisar de um visto de entrada para os Estados Unidos.</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal2" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content js--fadeInLeft">
+                  <h2>Parabéns!</h2>
+                  <blockquote>Com o visto na mão, é hora de fazer escolhas importantes!</blockquote>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInRight">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header3.png">
+                     <h2>Agência ou Por Conta Própria?</h2>
+                  </div>
+                  <div class="card-phase">FASE 3</div>
+                  <p>Um pacote de viagens pode te dar mais segurança com uma viagem planejada, mas essa pode não ser a melhor forma de economizar e planejar um sonho. Continue jogando e acumulando milhas, no caminho, eu te explico.</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal2" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInLeft">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header4.png">
+                     <h2>As Passagens Aereas</h2>
+                  </div>
+                  <div class="card-phase">FASE 4</div>
+                  <p>A ficha só cai quando as passagens estão na mão ou, melhor ainda, quando estão no app da Smiles. Escolher as passagens com antecedência pode ser uma ótima forma de economizar já que Orlando possui diversos hotéis que podem te receber de acordo com as datas das passagens mais baratas disponíveis.</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal3" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content js--fadeInRight">
+                  <h2>Isso aí!</h2>
+                  <blockquote>Economizou nas passagens aéreas compradas com milhas ou que garantiram milhas Smiles nas melhores datas das suas férias.</blockquote>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInLeft">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header5.png">
+                     <h2>Os Hotéis</h2>
+                  </div>
+                  <div class="card-phase">FASE 5</div>
+                  <p>Agora, vamos continuar nessa rota que cada vez mais deixa de ser um sonho e vai se transformando em um bom quarto de hotel para descansar depois de um dia cheio de magia.</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal2" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInRight">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header6.png">
+                     <h2>Os Ingressos dos Parques</h2>
+                  </div>
+                  <div class="card-phase">FASE 6</div>
+                  <p>Comprar os ingressos dos parques no Brasil pode ser uma forma de pagar o preço em reais ou, melhor ainda, usar suas milhas acumuladas e não gastar nada com isso. Além disso, você não vai pegar nenhuma fila.</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal3" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content js--fadeInLeft">
+                 
+                  <h2>Tá pertinho</h2>
+                  <p>Os castelos da Cinderela e do Harry Potter estão cada vez mais próximos de te receber como visitante.</p>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInRight">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header7.png">
+                     <h2>Roteiros dos Parques</h2>
+                  </div>
+                  <div class="card-phase">FASE 7</div>
+                  <p>Que tal planejar antes em quais atrações você e/ou sua família tem vontade de ir? #TeamAdrenalina ou #TeamSuave?</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal3" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInLeft">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header8.png">
+                     <h2>Os Gastos com Alimentação</h2>
+                  </div>
+                  <div class="card-phase">FASE 8</div>
+                  <p>Bateu a fome, né? E melhor que viajar é comer coisas gostosas viajando. Então, prepare-se para uma viagem gastronômica na sua estadia em Orlando com restaurantes dentro e fora dos parques.</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal2" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content js--fadeInRight">
+                  <h2>Já tô com a roupa de ir!</h2>
+                  <blockquote>Já vai escolhendo os looks para as fotos do instagram!</blockquote>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInRight">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header9.png">
+                     <h2>Como se Locomover</h2>
+                  </div>
+                  <div class="card-phase">FASE 9</div>
+                  <p>Aluguel de carros, Uber ou transporte público? Tudo isso é possível em Orlando e a Smiles pode te ajudar se você quiser alugar um carro ou com créditos da Uber.</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal3" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+            <div class="timeline-item">
+               <div class="timeline-img"></div>
+               <div class="timeline-content timeline-card js--fadeInRight">
+                  <div class="timeline-img-header">
+                     <img class="img-fluid img-card" src="./img/fase_header10.png">
+                     <h2>Explore a Cidade</h2>
+                  </div>
+                  <div class="card-phase">FASE 10</div>
+                  <p>Existe vida além dos parques em Orlando? Claro que sim! Você pode aproveitar muitas outras atrações e cidades vizinhas pagando e ganhando milhas com seu cartão GOL Smiles.</p>
+                  <a class="bnt-more" data-toggle="modal" data-target="#extraLargeModal2" href="javascript:void(0)">Jogar</a>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section>
+         <div class="container text-center">
+            <h2>Esse não é o FIM,</h2>
+            <h3>é o início de uma outra jornada.</h3>
+            <a type="button" href="#fase1">Escolher nova rota</a>
+         </div>
+      </section>
+      <!-- Modais -->
+      <!-- Modal Fase 1 -->
+      <div id="extraLargeModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 90%">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">Fase 1 - Planejar para Realizar</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               </div>
+               <div class="modal-body">
+                  <p>Jogue o dado, avance nas casas, veja as cartas e dicas.</p>
+                  <div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="game_f1.html"></iframe>
+                  </div>
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+	  <!-- Modal outras Fases - em Dev -->
+      <div id="extraLargeModal2" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 40%">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">No forno...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               </div>
+               <div class="modal-body">
+				<img src="./img/modal_wait1.png" class="img-fluid" alt="Logo Rota Smiles">
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div id="extraLargeModal3" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 40%">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <h5 class="modal-title">No forno...</h5>
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               </div>
+               <div class="modal-body">
+				<img src="./img/modal_wait2.png" class="img-fluid" alt="Logo Rota Smiles">
+               </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+               </div>
+            </div>
+         </div>
+      </div>
+	  	  <!-- Video Home -->
+      <div id="YoutubeModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+         <div class="modal-dialog modal-dialog-centered modal-lg" style="max-width: 90%">
+            <div class="modal-content">
+               <div class="modal-header">
+                  <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+               </div>
+					<div class="embed-responsive embed-responsive-16by9">
+                     <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/COY87nPKB9I"></iframe>
+                  </div>
+               <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Voltar</button>
+               </div>
+            </div>
+         </div>
+      </div>  
+	 
+	  
+      <!-- partial -->
+      <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js" integrity="sha384-LtrjvnR4Twt/qOuYxE721u19sVFLVSA4hf/rRt6PrZTmiPltdZcI7q7PXQBYTKyf" crossorigin="anonymous"></script>
+      <script src='https://cdn.jsdelivr.net/scrollreveal.js/3.3.1/scrollreveal.min.js'></script>
+      <script  src="./js/script.js"></script>
+   </body>
+</html>

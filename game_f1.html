@@ -1,0 +1,281 @@
+<html>
+   <head>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+      <title>Rota Smiles - Fase 1</title>
+      <meta name="viewport" content="width=1440">
+      <link rel="stylesheet" href="./game_f1_files/css/bg-Style.css">
+      <script  src="./game_f1_files/js/rotasm.js"></script>
+      <script type="text/javascript" src="./game_f1_files/values/values"></script><script type="text/javascript" src="./game_f1_files/values"></script>
+      <script type="text/javascript" src="./game_f1_files/values/values(1)"></script><script type="text/javascript" src="./game_f1_files/values(1)"></script>
+      <script type="text/javascript" src="./game_f1_files/values/values(2)"></script><script type="text/javascript" src="./game_f1_files/values(2)"></script>
+      <script type="text/javascript" src="./game_f1_files/values/values(3)"></script><script type="text/javascript" src="./game_f1_files/values(3)"></script>
+   </head>
+   
+   <body>
+         <!-- Painel do jogo com as casas -->
+      <table height="100%" width="100%" cellpaddding="0" cellspacing="0" border="0" align="center">
+         <tbody>
+            <tr valign="middle">
+               <td id="container" align="center" valign="middle">
+                  <table class="gameBoard" cellspacing="0">
+                     <tbody>
+                        <tr>
+                           <td class="l m space">
+                              <div class="ln mn num">5</div>
+                           </td>
+                           <td class="l m space" style="background-image: url("./game_f1_files/img/board_plane.png");">
+							  <div class="ln mn num">4</div>
+                           </td>
+                           <td class="l m space">
+                              <div class="ln mn num">3</div>
+                           </td>
+                           <td class="l m s space" style="background-image: url("./game_f1_files/img/camera.png");">
+                           <div class="ln mn sn num">2</div>
+                           </td>
+                           <td class="l m s space">
+                              <div class="ln mn sn num">1</div>
+                           </td>
+                           <td align="center" valign="middle" id="start"><img src="./game_f1_files/img/Flag-Green.png" class="startEnd"></td>
+                           <td></td>
+                           <td align="center" valign="middle" id="end"><img src="./game_f1_files/img/Flag-Checker.png" class="startEnd"></td>
+                           <td class="l m s space">
+                              <div class="ln mn sn num">45</div>
+                           </td>
+                           <td class="l m s space" style="background-image: url("./game_f1_files/img/board_plane.png");">
+                           <div class="ln mn sn num">44</div>
+                           </td>
+                           <td class="l m space">
+                              <div class="ln mn num">43</div>
+                           </td>
+                           <td class="l m space" style="background-image: url("./game_f1_files/img/dica.png");">
+                           <div class="ln mn num">42</div>
+                           <div class="instructButton"><img src="./game_f1_files/img/Button-Info.png" height="30" width="30" title="Clique para ver instruções" onclick="showInstruction(41)"></div>
+                           </td>
+                           <td class="l m space">
+                              <div class="ln mn num">41</div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="l m space">
+                              <div class="ln mn num">6</div>
+                           </td>
+                           <td></td>
+                           <td></td>
+                           <td class="s">
+                              <div class="sn"></div>
+                           </td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td class="s">
+                              <div class="sn"></div>
+                           </td>
+                           <td></td>
+                           <td></td>
+                           <td class="l m space" >
+                              <div class="ln mn num">40</div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="l m space" style="background-image: url("./game_f1_files/img/smiles.png");">
+                           <div class="ln mn num">7</div>
+                           <div class="instructButton"><img src="./game_f1_files/img/Button-Info.png" height="30" width="30" title="Clique para ver instruções" onclick="showInstruction(6)"></div>
+                           </td>
+                           <td class="l space" >
+                              <div class="ln num">8</div>
+                           </td>
+                           <td class="l space" style="background-image: url("./game_f1_files/img/camera.png");">
+                           <div class="ln num">9</div>
+                           </td>
+                           <td class="l space" >
+                              <div class="ln  num">10</div>
+                           </td>
+                           <td colspan="5" rowspan="3" align="center" valign="top">
+                              <div id="card">
+                                 <div id="cardHead"><img id="closeCard" title="Click to close" src="./game_f1_files/img/Button-Close.png" onclick="closeCard()"><img id="cardHeadImg"></div>
+                                 <div id="cardContent">
+                                    <div id="cardText"></div>
+                                    <div id="checkButton"><img src="./game_f1_files/img/Button-Check-Gray.png" title="Click to check answer" onclick="showAnswer()"></div>
+                                    <div id="cardAnswer" style="display: none;"></div>
+                                 </div>
+                              </div>
+							  <!-- Cartas -->
+                              <div id="tokens">
+							  <img src="./game_f1_files/img/token1.png" id="t0" class="token" draggable="false">
+							  </div>
+                              <div id="name"><img src="./game_f1_files/img/Gol_Smiles_logo.svg" class="name"></div>
+                              <div id="equip">
+                                 <div id="deck" onclick="drawCard(0)" title="Click to draw card" style="background-color: rgb(255, 90, 0); box-shadow: rgb(255, 90, 0) 1px 1px; display: inline-block;">
+                                    <div class="deckBack"><img id="deckBack" src="./game_f1_files/img/carta_pergunta.jpg"></div>
+                                 </div>
+                                 <div id="deck2" onclick="drawCard(1)" title="Click to draw card" style="background-color: rgb(102, 51, 152); box-shadow: rgb(102, 51, 152) 1px 1px; display: inline-block;">
+                                    <div class="deckBack"><img id="deckBack2" src="./game_f1_files/img/carta_instagram.jpg"></div>
+                                 </div>
+                              </div>
+                           </td>
+                           <td class="l s space" ">
+                              <div class="ln sn num">36</div>
+                           </td>
+                           <td class="l space" style="background-image: url("./game_f1_files/img/smiles.png");">
+                           <div class="ln num">37</div>
+                           <div class="instructButton"><img src="./game_f1_files/img/Button-Info.png" height="30" width="30" title="Clique para ver instruções" onclick="showInstruction(36)"></div>
+                           </td>
+                           <td class="l space" >
+                              <div class="ln num">38</div>
+                           </td>
+                           <td class="l m space" style="background-image: url("./game_f1_files/img/camera.png");">
+                           <div class="ln mn num">39</div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="m">
+                              <div class="mn"></div>
+                           </td>
+                           <td></td>
+                           <td></td>
+                           <td class="l s space" >
+                              <div class="ln sn num">11</div>
+                           </td>
+                           <td class="l s space" >
+                              <div class="ln sn num">35</div>
+                           </td>
+                           <td></td>
+                           <td></td>
+                           <td class="m">
+                              <div class="mn"></div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="l m space" >
+                              <div class="ln mn num">15</div>
+                           </td>
+                           <td class="l space" style="background-image: url("./game_f1_files/img/board_plane.png");">
+                           <div class="ln num">14</div>
+                           </td>
+                           <td class="l space" >
+                              <div class="ln num">13</div>
+                           </td>
+                           <td class="l s space" style="background-image: url("./game_f1_files/img/dica.png");">
+                           <div class="ln sn num">12</div>
+                           <div class="instructButton"><img src="./game_f1_files/img/Button-Info.png" height="30" width="30" title="Clique para ver instruções" onclick="showInstruction(11)"></div>
+                           </td>
+                           <td class="l s space" style="background-image: url("./game_f1_files/img/board_plane.png");">
+                           <div class="ln sn num">34</div>
+                           </td>
+                           <td class="l space" >
+                              <div class="ln num">33</div>
+                           </td>
+                           <td class="l space" style="background-image: url("./game_f1_files/img/dica.png");">
+                           <div class="ln num">32</div>
+                           <div class="instructButton"><img src="./game_f1_files/img/Button-Info.png" height="30" width="30" title="Clique para ver instruções" onclick="showInstruction(31)"></div>
+                           </td>
+                           <td class="l m space" >
+                              <div class="ln mn num">31</div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="l m space">
+                              <div class="ln mn num">16</div>
+                           </td>
+                           <td></td>
+                           <td id="instruct" align="right" valign="middle"></td>
+                           <td class="s">
+                              <div class="sn"></div>
+                           </td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td></td>
+                           <td class="s">
+                              <div class="sn"></div>
+                           </td>
+						   <!-- Dado -->
+                           <td>
+                              <div id="diceBox" style="width: 250px; height: 62px; position: absolute; margin-top: -31px; margin-left: -75px;"><div id="die0" class="die" onclick="rollDie(0),playSound(roll)" title="Click to roll" style="display: inline-block; background-image: url("./game_f1_files/img/Die1.png");"></div>
+                              <div id="die1" class="die" onclick="rollDie(1),playSound(roll)" title="Click to roll" style="display: none;"></div>
+                              <div id="die2" class="die" onclick="rollDie(2),playSound(roll)" title="Click to roll" style="display: none;"></div>
+                              <img src="./game_f1_files/img/Button-Hand.png" draggable="false" id="roll" onclick="rollAll()" title="Click to roll all" style="display: inline; margin: 0px 0px 20px 10px; cursor: pointer;"></div>
+                           </td>
+                           <td></td>
+                           <td class="l m space" style="background-image: url("./game_f1_files/img/camera.png");">
+                           <div class="ln mn num">30</div>
+                           </td>
+                        </tr>
+                        <tr>
+                           <td class="l m space" style="background-image: url("./game_f1_files/img/smiles.png");">
+                           <div class="ln mn num">17</div>
+                           <div class="instructButton"><img src="./game_f1_files/img/Button-Info.png" height="30" width="30" title="Clique para ver instruções" onclick="showInstruction(16)"></div>
+                           </td>
+                           <td class="l m space" >
+                              <div class="ln mn num">18</div>
+                           </td>
+                           <td class="l m space" >
+                              <div class="ln mn num">19</div>
+                           </td>
+                           <td class="l m s space" style="background-image: url("./game_f1_files/img/camera.png");">
+                           <div class="ln mn sn num">20</div>
+                           </td>
+                           <td class="l m s space" >
+                              <div class="ln mn sn num">21</div>
+                           </td>
+                           <td class="l m s space" style="background-image: url("./game_f1_files/img/dica.png");">
+                           <div class="ln mn sn num">22</div>
+                           <div class="instructButton"><img src="./game_f1_files/img/Button-Info.png" height="30" width="30" title="Clique para ver instruções" onclick="showInstruction(21)"></div>
+                           </td>
+                           <td class="l m s space" >
+                              <div class="ln mn sn num">23</div>
+                           </td>
+                           <td class="l m s space" style="background-image: url("./game_f1_files/img/board_plane.png");">
+                           <div class="ln mn sn num">24</div>
+                           </td>
+                           <td class="l m s space" >
+                              <div class="ln mn sn num">25</div>
+                           </td>
+                           <td class="l m s space" >
+                              <div class="ln mn sn num">26</div>
+                           </td>
+                           <td class="l m space" style="background-image: url("./game_f1_files/img/smiles.png");">
+                           <div class="ln mn num">27</div>
+                           <div class="instructButton"><img src="./game_f1_files/img/Button-Info.png" height="30" width="30" title="Clique para ver instruções" onclick="showInstruction(26)"></div>
+                           </td>
+                           <td class="l m space" >
+                              <div class="ln mn num">28</div>
+                           </td>
+                           <td class="l m space" >
+                              <div class="ln mn num">29</div>
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+            <tr>
+               <td height="1">
+                  <table style="display: none;">
+                     <tbody>
+                        <tr>
+                           <td width="33%">
+                              <h1 id="title" class="title"></h1>
+                              <input id="linkURL">
+                           </td>
+                        </tr>
+                     </tbody>
+                  </table>
+               </td>
+            </tr>
+         </tbody>
+      </table>
+	  
+	  <!-- Audios do dado -->
+      <audio src="./game_f1_files/audio/Dice.mp3"></audio>
+      <audio src="./game_f1_files/audio/CardFlip.mp3"></audio>
+	  
+      <script  src="./game_f1_files/js/rotasm2.js"></script>
+	  <script  src="./js/script.js"></script>
+      <iframe name="oauth2relay403061180" id="oauth2relay403061180" src="./game_f1_files/postmessageRelay.html" tabindex="-1" aria-hidden="true" style="width: 1px; height: 1px; position: absolute; top: -100px;"></iframe>
+   </body>
+
+</html>
