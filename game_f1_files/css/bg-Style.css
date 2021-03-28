@@ -1,0 +1,296 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans');
+
+html, body {
+	margin: 			0px;
+	padding: 			0px;
+	height: 			100%;
+	border: 			none;
+}
+
+body {
+	background-color: #ffffff;
+}
+
+	a:link          	{color: #fd752b;}
+	a:visited       	{color: #663399;}
+	a:hover         	{color: #ff5a00;}
+
+.logo {
+	display: 			inline-block;
+	float: 				left;
+	margin:				0px 15px;
+}
+
+h1.title {
+	display: inline-block;
+	float: left;
+	font-family: "NunitoRegular", 'Nunito', nunito-regular, sans-serif;
+	font-size: 15px;
+	font-weight: normal;
+	margin: 5px 0px;
+	color: #ff5a00;
+}
+
+h2 {
+	font-family: "NunitoRegular", 'Nunito', nunito-regular, sans-serif;
+	font-size:			22px;
+	font-weight:		normal;
+	color:				#ff5a00;
+	margin:				10px 0px 30px 0px;
+}
+
+#container {
+	background-color:	#eee;
+	touch-action:		none;
+	padding:			20px;
+	overflow:			hidden;
+}
+
+.gameBoard {
+	border-collapse: 	collapse;
+}
+
+.gameBoard TD {
+	height:				100px;
+	width:				100px;
+	background-size:	cover;
+	background-position: center;
+}
+
+.space {
+	border:				3px solid #000;
+	background-color:   rgb(255, 255, 255);
+}
+
+.num {
+	position:			absolute;
+	background-color:	rgba(255,255,255,0.6);
+	padding:			2px 3px 3px 2px;
+	font-family: 		"NunitoRegular", 'Nunito', nunito-regular, sans-serif;
+	font-size:			17px;
+	line-height:		100%;
+	border-bottom-right-radius: 10px;
+	margin-top:			-48px;
+	margin-left:		-1px;
+	font-weight:		bold;
+}
+
+.instructButton {
+	position:			absolute;
+	margin-top:			-46px;
+	margin-left:		69px;
+}
+
+.instructButton IMG {
+	cursor:				pointer;
+}
+
+.startEnd, .token {
+	max-width:			90px;
+	max-height:			90px;
+}
+
+#tokens {
+	position: 			absolute;
+	width:				1000px;
+	text-align:			center;
+	margin-top:			-90px;
+	margin-left:		-240px;
+}
+
+.token {
+	display:			inline-block;
+	touch-action:		none;
+	user-select:		none;
+	position:			relative;
+	cursor:				pointer;
+	margin:				0px 5px;
+	max-height:			90px;
+	max-width:			90px;
+}
+
+.token:active {
+	cursor: move;
+}
+
+#card {
+	display:			none;
+	position: 			absolute;
+	width:				780px;
+	height:				450px;
+	margin-top:			-80px;
+	margin-left:		-125px;
+	border:				2px solid #000;
+	background-color:	#fff;
+	box-shadow:			0px 0px 15px #666;
+	z-index:			1000000;
+}
+
+#cardHead {
+	width:				775px;
+	height:				40px;
+	padding:			5px 0px 0px 5px;
+	text-align:			left;
+}
+
+#cardHeadImg {
+	max-width:			60px;
+	max-height:			60px;
+}
+
+#cardContent {
+	padding:			13px;
+	text-align:			left;
+	font-family: 		"NunitoRegular", 'Nunito', nunito-regular, sans-serif;
+	font-size:			28px;
+	line-height:		150%;
+	height:				380px;
+	overflow:			auto;
+}
+
+#closeCard {
+	position:			absolute;
+	margin-left:		725px;
+	cursor:				pointer;
+}
+
+#checkButton {
+	display:			none;
+	text-align:			center;
+	margin:				20px 0px;
+	cursor:				pointer;
+}
+
+#name {
+	width:				500px;
+	height:				250px;
+	display:			table-cell;
+	vertical-align:		middle;
+}
+
+.name {
+	max-width:			480px;
+	max-height:			230px;
+}
+
+#equip {
+	position: 			absolute;
+	width:				600px;
+	height:				130px;
+	text-align:			center;
+	margin-top:			10px;
+	margin-left:		-40px;
+}
+
+#deck, #deck2 {
+	display:			none;
+	height:				125px;
+	width:				175px;
+	border:				1px solid #333;
+	border-width:		0px 1px 1px 0px;
+	border-color:		#333 #fff #fff #333;
+	margin:				0px	10px;
+	cursor:				pointer;
+	vertical-align:		middle;
+}
+
+.deckBack {
+	display:			table-cell;
+	height:				125px;
+	width:				225px;
+	vertical-align:		middle;
+}
+
+#deckBack, #deckBack2 {
+	max-height:			90px;
+	max-width:			180px;
+}
+
+.die {
+	border:				1px solid #000;
+	border-radius:		5px;
+	margin:				5px;
+	cursor:				pointer;
+	width:				50px;
+	height:				50px;
+	background-size:	cover;
+	background-position: center;
+}
+
+.roll {
+	animation:			roll .5s;
+	animation-timing-function: ease-out;
+}
+
+@keyframes roll {
+	from { transform: rotate(0deg) }
+		to { transform: rotate(-360deg) }
+	}
+
+.zoom { animation: zoom 0.5s }
+
+@keyframes zoom {
+	from { transform: scale(.25) }
+		to { transform: scale(1) }
+	}
+
+.link {
+	display: 			inline-block;
+	margin: 			20px 0px;
+}
+
+
+.pic {
+	display:			block;
+	max-width:			528px;
+	max-height:			297px;
+	margin:				20px auto;
+}
+
+.equatio {
+	min-height:			240px;
+}
+
+.googleDoc {
+	display:			block;
+	width:				528px;
+	height:				297px;
+	background-color:	#fff;
+	border:				0px;
+	frameborder:		0px;
+	margin:				20px auto;
+}
+
+.vid {
+	display:			block;
+	width:				528px;
+	height:				297px;
+	margin:				20px auto;
+}
+
+.voc {
+	display:			block;
+	margin:				20px auto;
+	width:				300px;
+	height:				60px;
+}
+
+.mp3 {
+	display:			block;
+	margin:				20px auto;
+}
+
+.desmos {
+	display:			block;
+	height:				297px;
+	width:				297px;
+	margin:				20px auto;
+}
+
+
+#instructions {
+	font-family: 		"NunitoRegular", 'Nunito', nunito-regular, sans-serif;
+	line-height:		100%;
+	height: 			26px;
+	background-color: 	#FFFDD4;
+}
