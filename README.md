@@ -28,7 +28,7 @@ No seguinte vídeo você encontra uma demonstração da solução proposta no Ha
 
 ## Membros do time 36
 
-* [Claudio Alves](https://www.linkedin.com/in/claudiospace/)
+* [Claudio Alves](https://www.linkedin.com/in/claudioprof/)
 * [Lucas Fersa](https://www.linkedin.com/in/lucasfersa/) 
 * [Stephanie Ambrosio](https://www.linkedin.com/in/stephanie-ambrosio-944779205) 
 
